@@ -5,6 +5,7 @@ import Home from "./Home/Home";
 import Products from "./Products/Products";
 import data from './Products/data';
 import Orders from './Orders/Orders';
+import OrderDetail from './Orders/OrderDetail';
 function App() {
 
   const openMenu = () => {
@@ -50,6 +51,7 @@ function App() {
                     <Route path = "/" element={<Home />} />
                     <Route path = "/catalog" element={<Products />} />
                     <Route path = "orders" element={<Orders />} ></Route>
+                    <Route path = "/order/:id" element={<OrderDetail />} ></Route>
                 </Routes>
             </main>
             <footer className="footer">&copy; 2022 Violent Fairy</footer>
