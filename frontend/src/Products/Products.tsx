@@ -15,7 +15,7 @@ let emptyProducts: Array<Product>;
 function Products() {
     const [products, setProducts]: [Product[],(products: Product[])=>void] = useState(emptyProducts);
     useEffect(() => {
-        axios.get<Product[]>("https://localhost:3000/catalog",
+        axios.get<Product[]>("https://violent-fairy-api.azurewebsites.net/catalog",
         {
             headers : {
                 "Content-Type": "application/json",
